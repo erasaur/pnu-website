@@ -2,10 +2,10 @@
   var map;
   var markers = [];
 
-  function initMap () {
+  window.initMap = function () {
     var data = main();
     map = new google.maps.Map(document.getElementById("map"), {
-      center: data["user"],
+      center: {"lat": data["pokemon"][0]["lat"], "lng": data["pokemon"][0]["lng"]},
       zoom: 15
     });
 
