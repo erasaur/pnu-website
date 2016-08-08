@@ -9,13 +9,15 @@
 <h1>Pokémon Near You</h1>
 <div id="enroll_container">
   <div class="enroll_step">
-    <p><span class="enroll_step_number">1.</span><a href="{{url_for('locations') }}">Find your location</a> to see if it's supported! </p>
-    <p>If it's not, and you would like to become a city champion, send a request to pokemonnearyou+champs@gmail.com</p>
+    <p><span class="enroll_step_number">1.</span><a href="{{url_for('locations') }}">Find your location</a> to see if it's supported!</p>
+    <p>If it's not, and you would like to become a city champion, send a
+    request to pokemonnearyou+champs@gmail.com</p>
   </div>
 
   <div class="enroll_step">
     <p><span class="enroll_step_number" id="second_step">2.</span> Send us the
-    location you want to monitor.</p>
+    location you want to monitor. On iOS only, you must send an initial message
+    before a location can be sent</p>
     <div id="enroll_buttons">
       <button id="enroll_android_button" class="enroll button lg">Android</button>
       <button id="enroll_ios_button" class="enroll button lg">iOS</button>
@@ -31,7 +33,8 @@
   </div>
 
   <div class="enroll_step">
-    <p><span class="enroll_step_number">3.</span>Follow the prompt in the response you will receive.</p>
+    <p><span class="enroll_step_number">3.</span>Follow the prompt in the
+    response you will receive.</p>
   </div>
 
   <div class="enroll_step">
