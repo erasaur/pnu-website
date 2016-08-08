@@ -20,12 +20,12 @@
       <button id="enroll_android_button" class="enroll button lg">Android</button>
       <button id="enroll_ios_button" class="enroll button lg">iOS</button>
     </div>
-    <div id="enroll_options">
+    <div id="enroll_options" class="image_container">
       <div id="enroll_android" class="enroll_option active">
-        <img class="info_pic" src="{{ url_for('static', filename='images/android_loc.gif') }}"/>
+        <img class="image" src="{{ url_for('static', filename='images/android_loc.gif') }}"/>
       </div>
       <div id="enroll_ios" class="enroll_option">
-        <img class="info_pic" src="{{ url_for('static', filename='images/ios_loc.png') }}"/>
+        <img class="image" src="{{ url_for('static', filename='images/ios_loc.gif') }}"/>
       </div>
     </div>
   </div>
@@ -38,8 +38,10 @@
     <p><span class="enroll_step_number">4.</span>???</p>
   </div>
   <div class="enroll_step">
-    <p><span class="enroll_step_number">5.</span>profit</p>
-    <img class="info_pic" src="{{ url_for('static', filename='images/profit.png') }}"/>
+    <p><span class="enroll_step_number">5.</span>Profit</p>
+    <div class="image_container">
+      <img class="image" src="{{ url_for('static', filename='images/profit.png') }}"/>
+    </div>
   </div>
 </div>
 

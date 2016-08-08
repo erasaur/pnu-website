@@ -6,7 +6,7 @@
     var option = document.getElementById(optionId);
     document.getElementById(btnId).onclick = function toggleHandler (event) {
       for (var i = 0; i < btns.length; i++) {
-        btns[i].className = btns[i].className.replace("active", "");
+        btns[i].className = btns[i].className.replace("active", "").trim();
       }
       var className = option.className.trim();
       option.className = className + " active";

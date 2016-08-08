@@ -21,6 +21,7 @@ a {
 #enroll_buttons {
   margin: 0 auto;
   max-width: 420px;
+  padding: 10px 0 30px;
 }
 #enroll_android_button {
   margin-right: 5%;
@@ -37,12 +38,12 @@ a {
 .enroll.button {
   width: 40%;
 }
-#enroll_options {
-  padding-top: 20px;
+
+.image_container {
   max-width: 420px;
   margin: 0 auto;
 }
-#enroll_options img {
+.image {
   width: 100%;
 }
 
