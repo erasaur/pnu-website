@@ -9,7 +9,6 @@
         btns[i].className = btns[i].className.replace("active", "");
       }
       var className = option.className.trim();
-      console.log(className);
       option.className = className + " active";
     }
   }
