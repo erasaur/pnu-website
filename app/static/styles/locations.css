@@ -20,6 +20,6 @@ tr td:nth-child(1) {
     padding-right: 10px;
 }
 
-tr.border_bottom td{
+/*tr.border_bottom td{
     border-bottom: 1pt solid black;
-}
+}*/
