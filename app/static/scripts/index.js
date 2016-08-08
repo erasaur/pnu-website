@@ -1,16 +1,17 @@
 ;(function () {
-  var btns = document.querySelectorAll(".enroll.button");
+  var btns = document.querySelectorAll(".enroll_option");
 
-  var toggleHandler = function toggleHandler (event) {
-    for (var i = 0; i < btns.length; i++) {
-      btns[i].className.replace("active", "");
+  function bindHandler (optionId) {
+    var btnId = optionId + "_button";
+    var option = document.getElementById(optionId);
+    document.getElementById(btnId).onclick = function toggleHandler (event) {
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].className = btns[i].className.replace("active", "");
+      }
+      var className = option.className.trim();
+      console.log(className);
+      option.className = className + " active";
     }
-    var className = event.target.className.trim();
-    event.target.className = className + " active";
-  };
-
-  function bindHandler (elemId) {
-    document.getElementById(elemId).onclick = toggleHandler;
   }
 
   bindHandler("enroll_android");
