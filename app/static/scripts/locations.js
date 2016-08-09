@@ -1,24 +1,11 @@
 ;(function(){
 
-    var locations = '{' +
-        '"states": [{' +
-            '"Michigan": {' +
-                '"cities": [' +
-                    '{"Ann Arbor":' +
-                        '{"email": "pnuAnnArbor@gmail.com"}' +
-                    '}' +
-                ']' +
-            '}' +
-        '}]' +
-    '}';
-
-
     var locations = {
         "states": [
             {
-                "Michigan": {
+                "All": {
                     "cities": [
-                        {"Ann Arbor": {"email": "pnuAnnArbor@gmail.com"}}
+                        {"Any": {"email": "pokemonnearyou@gmail.com"}}
                     ]
                 },
             }
