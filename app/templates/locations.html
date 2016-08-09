@@ -1,8 +1,8 @@
 {% extends "base.html" %}
 
 {% block head %}
-<title>pnu Locations</title>
-<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/locations.css') }}">
+    <title>pnu Locations</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/locations.css') }}">
 {% endblock %}
 
 {% block content %}
@@ -10,16 +10,15 @@
 
 <p>To quickly find your location, use <kbd>ctrl</kbd>/<kbd>cmd</kbd> + <kbd>f</kbd></p>
 
-<table id="cities">
+<table id="locations">
   <tr>
+    <th>State</th>
     <th>City</th>
     <th>Email</th>
   </tr>
-  <tr class="border_bottom">
-    <td>Ann Arbor</td>
-    <td>pnuAnnArbor@gmail.com</td>
-  </tr>
 </table>
+
+<script src="{{ url_for('static', filename='scripts/locations.js') }}"></script>
 {% endblock %}
 
 {% block footer %}
