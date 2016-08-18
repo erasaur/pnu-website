@@ -27,6 +27,9 @@ def locations():
         # search for city!
     return render_template('locations.html')
 
+@app.route('/sl/<token>')
+def short_link_redirect(token):
+    return redirect('https://goo.gl/{}'.format(token))
 
 @app.route('/')
 @app.route('/<path:path>')
